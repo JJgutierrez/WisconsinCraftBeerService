@@ -1,0 +1,13 @@
+﻿@model IEnumerable<BrewProject.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach(var item in Model)
+{
+    <h2>Customer data : @item.FirstName and @item.LastName and @item.City and also @item.DOB</h2>
+}
+
